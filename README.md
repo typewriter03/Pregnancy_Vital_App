@@ -24,15 +24,12 @@ An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log bl
 
 | Preview                                      | Location                       |
 | -------------------------------------------- | ------------------------------ |
-| ![Main list](docs/IMG-20250801-WA0016.jpg)   | `docs/IMG-20250801-WA0016.jpg` |
-| ![Add dialog](docs/IMG-20250801-WA0017.jpg)  | `docs/IMG-20250801-WA0017.jpg` |
-| ![Time picker](docs/IMG-20250801-WA0018.png) | `docs/IMG-20250801-WA0018.png` |
-| ![Delete](docs/IMG-20250801-WA0015.jpg)      | `docs/IMG-20250801-WA0015.jpg` |
+| ![Main list](docs/IMG-20250801-WA0016.jpg)   | `Main List` |
+| ![Add dialog](docs/IMG-20250801-WA0017.jpg)  | `Add Dialog` |
+| ![Time picker](docs/IMG-20250801-WA0018.jpg) | `Notification Timer with Interval` |
+| ![Delete](docs/IMG-20250801-WA0015.jpg)      | `Swipe Delete Feature` |
 
 \------------------------------------|---------------------------------------|---------------------------------------|----------------------------|
-\| ![Main list](docs/IMG-20250801-WA0016.jpg) | ![Add dialog](docs/IMG-20250801-WA0017.jpg) | ![Time picker](docs/IMG-20250801-WA0018.png) | ![Delete](docs/IMG-20250801-WA0015.jpg) |
-
----
 
 ## 🏗️ Tech Stack
 
