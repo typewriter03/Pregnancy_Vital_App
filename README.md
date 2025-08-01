@@ -1,4 +1,4 @@
-# Pregnancy Vitals Tracker 🚀
+# Pregnancy Vitals Tracker 
 An Android assignment given to me by Janitri and submitted as part of their recruitment/assessment process.
 An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log blood-pressure, heart-rate, weight, and baby-kick counts, then reminds them every day at a custom time.
 ---
@@ -45,16 +45,61 @@ An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log bl
 ---
 
 ## 🗄️ Project Structure (trimmed)
-app/
-└─ src/main/java/com/example/preg_vitals/
-├─ data/
-│ ├─ local/ # Room (Entity, DAO, DB)
-│ └─ repository/ # VitalsRepository
-├─ ui/
-│ ├─ screens/ # VitalsMainScreen, ReminderScreen
-│ └─ components/ # AddVitalsDialog, VitalsListItem
-├─ viewmodel/ # VitalsViewModel, factory
-└─ worker/ # ReminderWorker, ReminderScheduler
+pregnancy-vitals-tracker/
+ ├─ app/
+ │   ├─ src/
+ │   │   ├─ main/
+ │   │   │   ├─ java/
+ │   │   │   │   └─ com/
+ │   │   │   │       └─ example/
+ │   │   │   │           └─ preg_vitals/
+ │   │   │   │               ├─ data/
+ │   │   │   │               │   ├─ local/
+ │   │   │   │               │   │   ├─ Prefs.kt
+ │   │   │   │               │   │   ├─ VitalsDao.kt
+ │   │   │   │               │   │   ├─ VitalsDatabase.kt
+ │   │   │   │               │   │   └─ VitalsEntity.kt
+ │   │   │   │               │   └─ repository/
+ │   │   │   │               │       └─ VitalsRepository.kt
+ │   │   │   │               ├─ ui/
+ │   │   │   │               │   ├─ components/
+ │   │   │   │               │   │   ├─ AddVitalsDialog.kt
+ │   │   │   │               │   │   └─ VitalsListItem.kt
+ │   │   │   │               │   ├─ screens/
+ │   │   │   │               │   │   ├─ ReminderScreen.kt
+ │   │   │   │               │   │   └─ VitalsMainScreen.kt
+ │   │   │   │               │   └─ theme/
+ │   │   │   │               │       ├─ Color.kt
+ │   │   │   │               │       ├─ Theme.kt
+ │   │   │   │               │       └─ Type.kt
+ │   │   │   │               ├─ viewmodel/
+ │   │   │   │               │   ├─ VitalsViewModel.kt
+ │   │   │   │               │   └─ VitalsViewModelFactory.kt
+ │   │   │   │               ├─ worker/
+ │   │   │   │               │   ├─ ReminderScheduler.kt
+ │   │   │   │               │   └─ ReminderWorker.kt
+ │   │   │   │               ├─ MainActivity.kt
+ │   │   │   │               └─ PlaceholderScreen.kt   ← optional/test
+ │   │   │   ├─ AndroidManifest.xml
+ │   │   │   └─ res/
+ │   │   │       ├─ drawable/
+ │   │   │       │   └─ ic_notification.xml
+ │   │   │       ├─ mipmap/ (launcher icons)
+ │   │   │       └─ values/
+ │   │   │           ├─ colors.xml
+ │   │   │           ├─ strings.xml
+ │   │   │           └─ themes.xml
+ │   │   └─ test/ & androidTest/ (unit/UI tests)
+ │   ├─ build.gradle(.kts)
+ ├─ .gitignore
+ ├─ build.gradle(.kts)   (project-level)
+ ├─ settings.gradle(.kts)
+ ├─ README.md
+ └─ docs/
+     ├─ screenshot_main.png
+     ├─ screenshot_dialog.png
+     └─ screenshot_dark.png
+
 
 
 Thank You for reading 
