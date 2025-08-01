@@ -15,7 +15,7 @@ An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log bl
 ## 📸 Screenshots
 | Main list | Add dialog | Reminder picker |
 |-----------|------------|-----------------|
-| docs/IMG-20250801-WA0014.jpg | *insert image* | *insert image* |
+| ![Main list](docs/IMG-20250801-WA0016.jpg) | *insert image* | *insert image* |
 ---
 ## 🏗️ Tech Stack
 | Layer | Library | Notes |
