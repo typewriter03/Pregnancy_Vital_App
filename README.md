@@ -1,56 +1,62 @@
-````markdown
 # Pregnancy Vitals Tracker
+
 An Android assignment given to me by Janitri and submitted as part of their recruitment/assessment process.
 
-An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log blood-pressure, heart-rate, weight, and baby-kick counts, then reminds them every day at a custom time.
+An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log blood‑pressure, heart‑rate, weight, and baby‑kick counts, then reminds them every day at a custom time.
 
 ---
 
 ## ✨ Features
 
-| Capability                  | Details                                                                                       |
-|-----------------------------|-----------------------------------------------------------------------------------------------|
-| **Add Vitals**              | Floating Action Button opens a form for BP, heart-rate, weight, baby-kicks.                   |
-| **Set Notification Interval** | Custom **clock picker** lets users choose any hour & minute for daily reminders.               |
-| **Delete Entry**            | Swipe left on any vitals card to remove the entry from the list and database.                  |
-| **Daily Reminder**          | WorkManager fires a notification titled _“Time to log your vitals!”_ with a friendly prompt. |
-| **MVVM + Room**             | Reactive StateFlow updates; data persists in local Room database.                             |
-| **Jetpack Compose UI**      | Modern, declarative layouts with Material 3 components.                                        |
-| **DataStore**               | Persists notification time & theme preferences across restarts.                                |
+| Capability                    | Details                                                                                      |
+| ----------------------------- | -------------------------------------------------------------------------------------------- |
+| **Add Vitals**                | Floating Action Button opens a form for BP, heart‑rate, weight, baby‑kicks.                  |
+| **Set Notification Interval** | Custom **clock picker** lets users choose any hour & minute for daily reminders.             |
+| **Delete Entry**              | Swipe left on any vitals card to remove the entry from the list and database.                |
+| **Daily Reminder**            | WorkManager fires a notification titled *“Time to log your vitals!”* with a friendly prompt. |
+| **MVVM + Room**               | Reactive StateFlow updates; data persists in local Room database.                            |
+| **Jetpack Compose UI**        | Modern, declarative layouts with Material 3 components.                                      |
+| **DataStore**                 | Persists notification time & theme preferences across restarts.                              |
 
 ---
 
 ## 📸 Screenshots
 
-| Main list                          | Add dialog                            | Set time picker                       | Delete                     |
-|------------------------------------|---------------------------------------|---------------------------------------|----------------------------|
-| ![Main list](docs/IMG-20250801-WA0016.jpg) | ![Add dialog](docs/IMG-20250801-WA0017.jpg) | ![Time picker](docs/IMG-20250801-WA0018.png) | ![Delete](docs/IMG-20250801-WA0015.jpg)|
+| Preview                                      | Location                       |
+| -------------------------------------------- | ------------------------------ |
+| ![Main list](docs/IMG-20250801-WA0016.jpg)   | `docs/IMG-20250801-WA0016.jpg` |
+| ![Add dialog](docs/IMG-20250801-WA0017.jpg)  | `docs/IMG-20250801-WA0017.jpg` |
+| ![Time picker](docs/IMG-20250801-WA0018.png) | `docs/IMG-20250801-WA0018.png` |
+| ![Delete](docs/IMG-20250801-WA0015.jpg)      | `docs/IMG-20250801-WA0015.jpg` |
+
+\------------------------------------|---------------------------------------|---------------------------------------|----------------------------|
+\| ![Main list](docs/IMG-20250801-WA0016.jpg) | ![Add dialog](docs/IMG-20250801-WA0017.jpg) | ![Time picker](docs/IMG-20250801-WA0018.png) | ![Delete](docs/IMG-20250801-WA0015.jpg) |
 
 ---
 
 ## 🏗️ Tech Stack
 
-| Layer      | Library                     | Notes                                              |
-|------------|-----------------------------|----------------------------------------------------|
-| UI         | Jetpack Compose 1.6.x       | Material 3 components                              |
-| State      | Kotlin Coroutines + StateFlow | Reactive, thread-safe data flow                     |
-| DB         | Room 2.6.x                  | DAO, Entities, Database singleton                  |
-| Background | WorkManager 2.9.x           | Exact-time daily notifications                     |
-| Storage    | DataStore 1.1.x             | Key-value preferences                              |
-| DI         | Simple Factory              | Lightweight, no external DI libraries              |
+| Layer      | Library                       | Notes                                 |
+| ---------- | ----------------------------- | ------------------------------------- |
+| UI         | Jetpack Compose 1.6.x         | Material 3 components                 |
+| State      | Kotlin Coroutines + StateFlow | Reactive, thread‑safe data flow       |
+| DB         | Room 2.6.x                    | DAO, Entities, Database singleton     |
+| Background | WorkManager 2.9.x             | Exact‑time daily notifications        |
+| Storage    | DataStore 1.1.x               | Key‑value preferences                 |
+| DI         | Simple Factory                | Lightweight, no external DI libraries |
 
 ---
 
 ## 🚀 Getting Started
 
 1. Clone this repo:
+
    ```bash
    git clone https://github.com/yourusername/pregnancy-vitals-tracker.git
-````
-
-2. Open **Android Studio ≥ Iguana** → *Open an existing project*.
-3. Let Gradle sync & build; Compose compiler handles Kotlin 2.x.
-4. **Run** on an emulator or real device (API 24+).
+   ```
+2. Open **Android Studio ≥ Iguana** → *Open an existing project*.
+3. Let Gradle sync & build; Compose compiler handles Kotlin 2.x.
+4. **Run** on an emulator or real device (API 24+).
 
 ---
 
@@ -112,10 +118,8 @@ pregnancy-vitals-tracker/
  ├─ settings.gradle(.kts)
  ├─ README.md
  └─ docs/
-     ├─ screenshot_main.png
-     ├─ screenshot_dialog.png
-     └─ screenshot_time.png
-```
-
-```
+     ├─ IMG-20250801-WA0016.jpg
+     ├─ IMG-20250801-WA0017.jpg
+     ├─ IMG-20250801-WA0018.png
+     └─ IMG-20250801-WA0015.jpg
 ```
