@@ -1,6 +1,5 @@
 # Pregnancy Vitals Tracker
 
-An Android assignment given to me by Janitri and submitted as part of their recruitment/assessment process.
 
 An **Android (Kotlin + Jetpack Compose)** app that lets expectant parents log blood‑pressure, heart‑rate, weight, and baby‑kick counts, then reminds them every day at a custom time.
 
